@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>exercise 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#box-model">Box model</a></li>
+          <li><a href="#Flexbox">Flatbox</a></li>
+          <li><a href="#Positioning-elements">Positioning elements</a></li>
+          <li><a href="#Heading-use">Heading use</a></li>
+          <li><a href="#Simple-JavaScript">Simple JavaScript</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="box-model" class="boxModel">
+        <div class="boxModelWrapper">
+          <h2>CSS Box Model</h2>
+          <p>/*Padding is inside of the element of CSS*/</p>
+          <p><strong>padding:40px</strong></p>
+          <p>/*Margin is outside of the elements of CSS*/</p>
+          <p><strong>Margin:40px</strong></p>
+          <p>/*Border is added to width and height of CSS*/</p>
+          <p><strong>border: 10px soild green</strong></p>
+        </div>
+      </section>
+      <section id="Flexbox" class="Flexbox">
+        <div class="flexbox-wrapper">
+          <div class="flexbox-title">
+            <div><h2>Display: Flex</h2></div>
+          </div>
+          <div class="flexbox-bottom">
+            <div class="flexbox-left">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="flexbox-right">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Positioning-elements" class="positioning">
+        <div class="positioning-wrapper">
+          <div><h2>Positioning</h2></div>
+          <div class="circle" style="right: 48px; top: 34px"></div>
+          <div class="circle" style="left: 48px; bottom: 34px"></div>
+          <div class="circle" style="right: 80px; bottom: 80px"></div>
+          <div
+            class="square"
+            style="right: 48px; bottom: 34px; z-index: 999"
+          ></div>
+          <div class="square" style="right: 40%; bottom: 40%"></div>
+        </div>
+      </section>
+      <section id="Heading-use" class="heading">
+        <div class="heading-wrapper">
+          <h1>Proper Heading Usage</h1>
+          <h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
+            egestas massa.
+          </h2>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
+            egestas massa. Aliquam blandit, purus at placerat rutrum, urna enim
+            dictum ante, at condimentum lacus sem in risus. Donec consectetur
+            leo semper augue convallis hendrerit.
+          </p>
+          <h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
+            egestas massa.
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
+            egestas massa. Aliquam blandit, purus at placerat rutrum, urna enim
+            dictum ante, at condimentum lacus sem in risus. Donec consectetur
+            leo semper augue convallis hendrerit.
+          </p>
+        </div>
+      </section>
+      <section id="Simple-JavaScript" class="javaScript">
+        <script>
+          let counterValue = 0;
+          function increaseCounter() {
+            counterValue = counterValue + 1;
+            console.log(counterValue);
+            const counterDic = document.querySelector("#counter");
+            counterDic.innerHTML = counterValue;
+          }
+        </script>
+        <div class="javascript-wrapper">
+          <div><h2>Simple JavaScript</h2></div>
+
+          <div class="button">
+            <p id="counter">0</p>
+            <button onclick="increaseCounter()">Click to increase</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footerWrapper">
+        <p>Evelyn Li - Fall 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
